@@ -35,6 +35,11 @@ def resize_image(im, im_size):
 	return im_resized
 
 
+def save_resized_image(im_resized, image_path):
+	"""Save the resized image to path."""
+	im_resized.save(image_path)
+
+
 def read_image_cv2(image_path):
 	"""
 	Read image using cv2, this function returns an array.
