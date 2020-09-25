@@ -4,8 +4,8 @@ from PIL import Image
 
 def read_image(image_path):
 	"""
-	Read image to a PIL image, then we can use im.show() or just im 
-	(when im.show() not working) to show the image.
+	Read image to a PIL image, then we can use im.show() or display(im) 
+	to show the image.
 	"""
 	im = Image.open(image_path)
 	return im

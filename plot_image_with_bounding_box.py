@@ -71,6 +71,17 @@ def display_image(img):
     plt.show()
 
 
+def display_image_PIL(img):
+    """
+    Display the image in its original size.
+
+    Parameters:
+    -----------
+    img: array-like image
+    """
+    im = Image,fromarray(img)
+    display(im)
+
 def show_image_with_bounding_boxes(img_path, boxes, labels=None):
     img = cv2.imread(str(img_path))
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
