@@ -15,4 +15,8 @@ def unzip_tar_gz(file_path, target_dir):
 	# ! tar -zxvf file_path -C target_dir  # alternatively
 
 
-
+from zipfile import ZipFile 
+def unzip_zipfile(zip_path):
+	"""Extract all the contents of zip file in current dir"""
+with ZipFile(zip_path, "r") as zipObj:
+	zipObj.extractall()
