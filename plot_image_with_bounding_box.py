@@ -7,6 +7,7 @@ from PIL import Image
 from pathlib import Path
 import matplotlib.pyplot as plt
 
+# There is a package called bbox-visualizer, try this next time!!
 
 def plot_one_box(box, img, color=None, label=None, line_thickness=None):
     """
